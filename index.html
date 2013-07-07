@@ -30,17 +30,38 @@
       }
       .thermometer, .order, .social {
         /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
+        /*height: 40px;
+        line-height: 40px;*/
+        text-align: center;
+        overflow: hidden;
+      }
+      .order {
         height: 40px;
         line-height: 40px;
       }
       .current-level {
-        padding: 10px 30px;
-        height: 50px;
-        border-radius: 50px;
-        background-color: red;
+        height: 15px;
+        border-radius: 15px;
+        border: 1px solid black;
+        width: 90%;
+        margin: 5px 5%;
+        float: left;
       }
       div.row {
         border: 1px solid;
+      }
+      h3 {
+        margin: 0;
+        padding: 0;
+      }
+      h5 {
+        margin: 0;
+        padding: 0;
+      }
+      .backers {
+        width: 33%;
+        float: left;
+        margin: 0;
       }
     </style>
   </head>
@@ -59,12 +80,12 @@
       </div>
       <div class="row heading">
         <div clas="span12">
-          <h1>Bitstarter Title</h1>
+          <h1>The Footy-100</h1>
         </div>
       </div>
       <div class="row subheading">
         <div class="span12">
-      <p class="lead">This is my first bitstarter project.</p>
+      <p class="lead">Fantasy football meets fantasy trading.</p>
     </div>
       </div>
       <div class="row pitch">
@@ -73,26 +94,27 @@
         </div>
         <div class="span6">
           <div class="thermometer">
-            <div class="row">
-              <div class="span2 backers">
+
+              <div class="backers">
                 <h3>N/A</h3>
                 <h5>backers</h5>
               </div>
-              <div class="span2 backers">
+              <div class="backers">
                 <h3>N/A</h3>
                 <h5>of $1,000</h5>
               </div>
-              <div class="span2 backers">
+              <div class="backers">
                 <h3>100</h3>
                 <h5>days left</h5>
               </div>
-            </div>
-            <div class="row">
-              <span class="current_level"></span>
-            </div>
+
+
+              <div class="current-level"></div>
+
           </div>
+
           <div class="order">
-            Order
+            <a href="#" class="btn btn-primary">Back this Project</a>
           </div>
           <div class="social">
             Social
