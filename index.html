@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
     <style type="text/css">
@@ -44,11 +43,11 @@
 
       /* Main body and headings */
       body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        /*font-family: 'Open Sans', Helvetica, Arial, sans-serif;*/
       }
       .heading, .subheading {
         /*font-family: 'Ubuntu', Helvetica, Arial, sans-serif;*/
-        text-align: center;
+        /*text-align: center;*/
       }
       p.lead {
         padding-top: 1.5%;
@@ -62,9 +61,14 @@
         line-height: 24px;
       }
       h1 {
-	font-weight: 100;
+	      font-weight: 100;
+        font-size: 5em;
+        margin: 0.5em 0 0.3em;
       }
-
+      h3 {
+        margin: 3.5% 0;
+        font-weight: 100;
+      }
       /* Video pitch and Action */
       .pitch {
         padding: 2.5% 0%;
@@ -85,7 +89,7 @@
 
       /* Marketing Copy and Footer */
       .copy {
-        padding-top: 2.5%;
+        /*padding-top: 2.5%;*/
         padding-bottom: 2.5%;
         text-align: justify;
       }
@@ -102,6 +106,25 @@
       .footer a {
         color: #ccccff;
       }
+      .v-small {
+        font-size: 0.5em;
+      }
+      .small {
+        font-size: 1em;
+      }
+      .medium {
+        font-size: 2em;
+      }
+      .large {
+        font-size: 3em;
+      }
+      .v-large {
+        font-size: 4em;
+      }
+      .heatmap div {
+        margin: 10% 2% 0;
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
@@ -110,7 +133,7 @@
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container offset1">
           <button type="button" class="btn btn-navbar"
                   data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
@@ -137,20 +160,39 @@
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
-        <div class="span12">
+        <div class="span12 offset1">
           <h1>Footy-100</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
-        <div class="span12">
+        <div class="span12 offset1">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
           <p class="lead">Fantasy football meets fantasy trading.</p>
         </div>
       </div>
       <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="images/soccer_480x319.jpg">
+        <div class="span5 offset1 copy">
+          <!--<div class="small">formation</div>
+          <div class="large">dividend</div>
+          <div class="v-large">football</div>
+          <div class="small">market value</div>
+          <div class="large">shares</div>
+          <div class="medium">goal</div>
+          <div class="small">assist</div>
+          <div class="v-small">clean sheet</div>
+          <div class="medium">value</div>-->
+          <p>Do you enjoy the excitement of fantasy football but want to
+          shake things up a bit?</p>
+          <p>Ever wondered if one Robin van Persie is more valuable than 10
+            Grant Holts?</p>
+          <p>How many Ben Fosters give the same return as one Petr
+            Cech?</p>
+          <p>In the footy-100 fantasy competition, instead of just buying a
+            football team, you buy shares in the players. Instead of points,
+            get dividends. Then, when your team have earned you more funds,
+            it's time to make the call. Do you invest further in your existing
+            team or upgrade to a higher rated player? The choice is yours</p>
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
@@ -188,7 +230,7 @@
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
+            <button class="btn btn-success btn-large">Contribute</button>
           </div>
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
@@ -205,42 +247,40 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="images/stock_market_480x319.jpg">
+          <img class="img-polaroid" src="images/soccer_480x319.jpg">
         </div>
         <div class="span5 copy">
-	   <p>Everyone loves fantasy football. How about combining it with the
-           excitement of fantasy share trading?</p>
-           <p>Ever wondered if one Robin van Persie is more valuable than 10
-           Grant Holts? How many Ben Fosters give the same return as one Petr
-           Cech? Now you can find out. In the footy-100 fantasy competition,
-           instead of buying a football team, invest in shares of the
-           footballers. Instead of points, get dividends. Then, when your team
-           have earned you more funds, it's time to make the call. Do you invest
-           further in your exitsing team or upgrade to a higher rated player?
-           The choice is yours</p>
-   
+          <h3>Fantasy Football</h3>
+          <p>Just like in standard fantasy football competitions, you pick a
+          squad of players, and each week pick your team from that squad.
+          Your players earn you points for goals, assists and clean sheets,
+          and lose you points for conceding goals and getting sent off.</p>
+          <p>However, unlike the standard games, these points are converted
+          directly into pounds and can be spent on improving your squad. Come
+          the end of the season, it's the team that has the highest total value -
+          that is total of players and points - that wins.</p>
+
         </div>
       </div>
 
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
+          <h3>Fantasy Trading</h3>
+          <p>Rather than just having a player for each position, you buy shares
+            in players. So, in goal, you could have one share in Petr Cech.
+            However, you could instead have 5 shares in Julian Speroni.</p>
+          <p>The value of each player will increase and decrease based on market
+            value - just like the stock market. So, after a few weeks, your 5
+            shares in Julian Speroni could now be worth 2 Petr Cechs. Of course,
+            it could also go the other way.</p>
+          <p>As each week goes on, re-invest your money and choose when to
+            buy more shares in your existing players, and when to trade in for
+            a better model.</p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" src="images/stock_market_480x319.jpg">
         </div>
+
       </div>
 
       <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
@@ -254,12 +294,15 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
+                    How can I stay updated about the Footy-100 project?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Frequently Asked Question.
+                    You can follow us on twitter or for more detail, the footy-100
+                    blog will provide updates on the development process. Questions
+                    by email are also welcomed and we will endeavor to respond either
+                    directly or via the blog.
                   </div>
                 </div>
               </div>
@@ -267,15 +310,66 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
+                    Will there be a mobile app available for the game?
                   </a>
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    A question which is commonly asked by users.
+                    Not for the initial launch. The website will be html5 and be
+                    designed responsively, so mobile users will be able to take
+                    part without requiring an app.
                   </div>
                 </div>
               </div>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseTwo">
+                    What competitions will this cover?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>The first season will cover the English Premier League (EPL).
+                    Future seasons will expand to offer some of the other top
+                    leagues.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseTwo">
+                    Are there any plans for any other sports?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    We are concentrating on football for the first version. If
+                    that is successful, and there is demand for other sports,
+                    we will certainly be looking at transferring the format across.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseTwo">
+                    When will the first competition start?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    The game will be ready for the start of the 2014-15 season.
+                    Later in the 2013-14 season, we'll be running some beta tests
+                    so that we are ready to go next summer.
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
